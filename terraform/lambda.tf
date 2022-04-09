@@ -60,12 +60,12 @@ resource "aws_iam_role_policy" "lambda_policy" {
     Statement : [
       {
         Action = [
-          "sqs:*"
-        ]
-        Resource = [
           "sqs:ReceiveMessage",
           "sqs:DeleteMessage",
           "sqs:GetQueueAttributes"
+        ]
+        Resource = [
+          "${aws_sqs_queue.queue.arn}"
         ]
         Effect = "Allow"
       },
