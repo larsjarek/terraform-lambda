@@ -1,0 +1,4 @@
+bucket         = "080865980379-tfstate"
+key            = "services/eu-central-1/segmentation-batcher.tfstate"
+region         = "eu-central-1"
+dynamodb_table = "080865980379-tfstate-lock"

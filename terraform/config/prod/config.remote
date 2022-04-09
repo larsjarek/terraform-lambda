@@ -1,0 +1,4 @@
+bucket         = "222222222222-tfstate"
+key            = "services/eu-central-1/example-lambda.tfstate"
+region         = "eu-central-1"
+dynamodb_table = "222222222222-tfstate-lock"
